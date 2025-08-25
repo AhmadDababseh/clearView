@@ -1,0 +1,255 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+    line-height: 1.6;
+    background: #f9fafc;
+}
+header {
+    background: linear-gradient(to right, #2563eb, #1d4ed8);
+        color: white;
+        padding: 6rem 2rem;
+        text-align: center;
+    }
+    header h1{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        font-weight: 700;
+    }
+    header p {
+        font-size: 1.3rem;
+        opacity: 0.95;
+        max-width: 700px;
+        margin: auto;
+    }
+    header .btn {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 10px;
+}
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      text-decoration: none;
+      color: #2563eb;
+      font-weight: 600;
+    }
+    section {
+      padding: 5rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 2.5rem;
+      color: #1e3a8a;
+    }
+    .services, .industries-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease;
+    }
+    .card:hover { transform: translateY(-5px); }
+    .card h3 { margin-bottom: 1rem; color: #2563eb; }
+    .trust, .cta, .telegram {
+        background: linear-gradient(to right, #1e3a8a, #2563eb);
+      color: white;
+      text-align: center;
+      padding: 3rem 2rem;
+      border-radius: 12px;
+      margin-top: 3rem;
+      max-width: 1000px;
+    }
+    .trust p, .cta p { max-width: 700px; margin: auto; margin-bottom: 1rem; }
+    .portfolio, .testimonials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .portfolio-item, .testimonial {
+      background: #fff;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .portfolio-item img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    .testimonial p {
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+    .testimonial h4 {
+      color: #2563eb;
+      font-weight: 600;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #111827;
+      color: #d1d5db;
+    }
+    footer a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.8rem 1.5rem;
+      background: #2563eb;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s ease;
+    }
+    .btn:hover { background: #1d4ed8; }
+
+    .hire-me, #about {
+  background: linear-gradient(to right, #1e3a8a, #2563eb);
+  color: white;
+  text-align: center;
+  padding: 6rem 2rem;
+  border-radius: 12px;
+  margin: 4rem auto;
+  max-width: 1000px;
+}
+.hire-me h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+}
+.hire-me p {
+  max-width: 750px;
+  margin: auto;
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.7;
+}
+.contact-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.btn.secondary {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+.btn.secondary:hover {
+  background: white;
+  color: #1e3a8a;
+}
+/*
+
+#industries {
+  padding: 4rem 2rem;
+}
+
+#industries h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #00fff7;
+  text-shadow: 0 0 10px #00fff7;
+  margin-bottom: 3rem;
+}
+
+.industries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.industries-grid .card {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 0 30px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.industries-grid .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 50px #00fff7;
+}
+
+.industries-grid .card h3 {
+  margin-bottom: 1rem;
+  color: #ff0080;
+  text-shadow: 0 0 10px #ff0080;
+}
+
+.industries-grid .card p {
+  line-height: 1.5;
+  color: #c0c0ff;
+}*/
+
+/* Common style for inputs, selects, and textarea */
+#contactForm input,
+#contactForm select,
+#contactForm textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border: none;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover and focus effects */
+#contactForm input:focus,
+#contactForm select:focus,
+#contactForm textarea:focus {
+  transform: translateY(-5px);
+  box-shadow: 0 0 40px #00fff7;
+}
+
+/* Placeholder styling */
+#contactForm input::placeholder,
+#contactForm textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Button styling */
+#contactForm .btn {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #ff0080, #00fff7);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contactForm .btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 50px #ff0080, 0 0 50px #00fff7;
+}
